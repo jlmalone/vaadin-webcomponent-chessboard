@@ -1,9 +1,10 @@
-
+/* Inject chess-board import to host page, here made dynamically when
+ * the server side component is used for the first time. 
+ */
 
 var el =  document.createElement("link");
 el.rel = "import";
 el.href="VAADIN/chessstuff/chess-board/dist/chess-board.html";
-
 document.getElementsByTagName("head").item(0).appendChild(el);
 
 

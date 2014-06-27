@@ -48,7 +48,7 @@ public class MyVaadinUI extends UI {
                 chessBoard.move(from.getValue(), to.getValue());
             });
             layout.addComponent(new MHorizontalLayout(from, to, move).
-                    alignAll(Alignment.BOTTOM_LEFT).withHeight("70px"));
+                    alignAll(Alignment.BOTTOM_LEFT));
 
             TextField state = new TextField("State, FEN syntax");
             state.setValue(
@@ -58,8 +58,8 @@ public class MyVaadinUI extends UI {
                 chessBoard.setBoardState(state.getValue());
             });
             layout.addComponent(new MHorizontalLayout(state, set).alignAll(
-                    Alignment.BOTTOM_LEFT).withHeight("70px"));
-            
+                    Alignment.BOTTOM_LEFT));
+
         });
         layout.addComponent(button);
     }
